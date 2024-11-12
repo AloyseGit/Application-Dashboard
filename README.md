@@ -1,5 +1,5 @@
 Ce code propose une application python permettant la création d'un Dashboard des dépenses d'un compte courant crédit mutuel. 
-Ainsi, celui-ci ne parmet pas l'analyse de compte courant d'autre banque, si vous ne disposez pas de données au bon format un excel comportant des dépenses générées aléatoirement a été déposé dans le répertoire. 
+Ainsi, celui-ci ne permet pas l'analyse de compte courant d'autre banque, si vous ne disposez pas de données au bon format un excel comportant des dépenses générées aléatoirement a été déposé dans le répertoire. 
 
 Environnement : Python 3.11.1
   1. pip install 'requirements.txt'

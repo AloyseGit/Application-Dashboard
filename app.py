@@ -36,19 +36,6 @@ def preprocessing(df, period_in_month):
     Output : 
         df_s : dataframe
     """
-    ############################ Attribution de catégorie ############################
-    ind=df[df['Libellé opération'].str.contains("VIR DE M ALOYSE PHULPIN")].index
-    df['Catégorie'].iloc[ind]='Epargne'
-
-    ind=df[df['Libellé opération'].str.contains("VIR LIVRET JEUNE")].index
-    df['Catégorie'].iloc[ind]='Epargne'
-
-    ind=df[df['Libellé opération'].str.contains("VIR LIVRET BLEU")].index
-    df['Catégorie'].iloc[ind]='Epargne'
-
-    ind=df[df['Libellé opération'].str.contains("VIR LIVRET D'EPARGNE POPULAIRE")].index
-    df['Catégorie'].iloc[ind]='Epargne'
-
     ############################ Formatage des données ############################
     df['Date opération']=pd.to_datetime(df['Date opération'], format='%d/%m/%Y')
     df['Montant']=df['Montant'].replace('\,', '.', regex=True).astype('float')
